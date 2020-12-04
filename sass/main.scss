@@ -667,6 +667,72 @@ body {
         }
       }
     }
+
+    &-right {
+      transform: scaleX(-1);
+      left: 14vmin;
+      top: -35.7vmin;
+
+      &::before {
+        width: 1vmin;
+        height: 0.3vmin;
+        background: $eye-black-color;
+        z-index: 1;
+        top: 0.75vmin;
+        left: 1.7vmin;
+        transform: rotate(-15deg);
+      }
+
+      .eye-inner {
+        &-1 {
+          top: 0.8vmin;
+        }
+
+        &-2 {
+          left: -0.9vmin;
+
+          &::before {
+            left: 3.9vmin;
+          }
+
+          &::after {
+            top: -0.3vmin;
+          }
+        }
+
+        &-5 {
+          &::before {
+            width: 0.8vmin;
+            left: 0.5vmin;
+          }
+        }
+
+        &-6 {
+          &::before {
+            box-shadow: -0.3vmin -0.2vmin 0 0.01vmin $eye-white-color;
+          }
+        }
+
+        &-8 {
+          &::before {
+            top: 0.6vmin;
+          }
+
+          &::after {
+            width: 2.3vmin;
+            top: 0.3vmin;
+            left: 0.1vmin;
+          }
+        }
+
+        &-9 {
+          &::before {
+            left: -0.2vmin;
+            top: 0.5vmin;
+          }
+        }
+      }
+    }
   }
 
   .nose {
