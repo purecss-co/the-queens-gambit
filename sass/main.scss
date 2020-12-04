@@ -15,6 +15,9 @@ $nail-color: #fcd3eb;
 $nail-outer-color: #fdfde8;
 $watch-color: #f5b06b;
 $watch-crystal-color: #feffe7;
+$eye-black-color: #000000;
+$eye-white-color: #fefee7;
+$eye-brown-color: #6e2405;
 
 html,
 body {
@@ -420,6 +423,56 @@ body {
     border-bottom-left-radius: 1vmin;
     border-bottom-right-radius: 0;
     border-top-right-radius: 2vmin;
+  }
+
+  .eye {
+    width: 6.5vmin;
+    height: 4.3vmin;
+    top: -35.6vmin;
+    left: -13.9vmin;
+
+    &-inner {
+      &-1 {
+        width: 3.5vmin;
+        height: 2vmin;
+        background: $eye-black-color;
+        border-radius: 50%;
+        transform: rotate(10deg);
+        left: -0.4vmin;
+        top: 0.7vmin;
+
+        &::before {
+          width: 2.2vmin;
+          height: 1.5vmin;
+          background: $eye-black-color;
+          left: -0.6vmin;
+          top: 0.25vmin;
+          border-bottom-left-radius: 2vmin;
+          transform: skewX(7deg) rotate(5deg);
+        }
+
+        &::after {
+          width: 1.5vmin;
+          height: 1.5vmin;
+          background: $eye-black-color;
+          left: 2.4vmin;
+          top: 0vmin;
+          transform: rotate(-30deg) skewX(-15deg);
+          border-radius: 50%;
+          border-bottom-right-radius: 1vmin;
+        }
+      }
+
+      &-2 {
+        width: 4vmin;
+        height: 1vmin;
+        background: $eye-black-color;
+        top: -2vmin;
+        left: -0.8vmin;
+        border-top-right-radius: 0.5vmin;
+        box-shadow: 0.5vmin 0.5vmin 0 0.1vmin $eye-black-color;
+      }
+    }
   }
 
   .nose {
