@@ -9,6 +9,7 @@ $nose-color: #f787c7;
 $shirt-color: #000020;
 $shirt-collar-color: #fdeae3;
 $hand-left-color: #f68fc7;
+$hand-left-light-color: #f8a7d2;
 $hand-right-color: #fabede;
 $nail-color: #fcd3eb;
 $nail-outer-color: #fdfde8;
@@ -584,7 +585,11 @@ body {
       z-index: -1;
       width: 20vmin;
       height: 1.3vmin;
-      background: $hand-left-color;
+      background: linear-gradient(
+        to right,
+        $hand-left-color,
+        $hand-left-light-color
+      );
       top: -5.9vmin;
       left: -1.9vmin;
       border-bottom-right-radius: 1vmin;
@@ -606,7 +611,11 @@ body {
     &-3 {
       width: 20vmin;
       height: 2vmin;
-      background: $hand-left-color;
+      background: linear-gradient(
+        to right,
+        $hand-left-color,
+        $hand-left-light-color
+      );
       top: -0.2vmin;
       left: -1.9vmin;
       border-bottom-right-radius: 2vmin;
@@ -616,7 +625,11 @@ body {
       z-index: -1;
       width: 15vmin;
       height: 2vmin;
-      background: $hand-left-color;
+      background: linear-gradient(
+        to right,
+        $hand-left-color,
+        $hand-left-light-color
+      );
       top: 11.5vmin;
       left: -7.5vmin;
       transform: rotate(28deg);
