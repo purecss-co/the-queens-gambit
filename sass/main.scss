@@ -6,6 +6,8 @@ $hair-color: #cf3d07;
 $hair-dark-color: #6e2304;
 $eyebrow-color: #6d2304;
 $nose-color: #f66ebc;
+$neck-color: #ef78b6;
+$neck-light-color: #f5c0d8;
 $shirt-color: #000020;
 $shirt-collar-color: #fdeae3;
 $hand-left-color: #f68fc7;
@@ -815,9 +817,6 @@ body {
     }
   }
 
-  .mouth {
-  }
-
   .neck {
     z-index: -1;
     width: 17.5vmin;
@@ -828,7 +827,7 @@ body {
     border-top-left-radius: 2.2vmin;
     border-bottom-right-radius: 5.3vmin;
     border-bottom-left-radius: 5.3vmin;
-    background: linear-gradient(to right, #ef78b6, #f5c0d8);
+    background: linear-gradient(to right, $neck-color, $neck-light-color);
   }
 
   .shirt {
