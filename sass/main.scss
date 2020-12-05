@@ -815,6 +815,9 @@ body {
     }
   }
 
+  .mouth {
+  }
+
   .neck {
     z-index: -1;
     width: 17.5vmin;
@@ -1205,11 +1208,11 @@ body {
       height: 1vmin;
       background: $watch-crystal-color;
       top: -1.1vmin;
+      left: -0.05vmin;
       border-top-right-radius: 0.2vmin;
       border-top-left-radius: 0.2vmin;
       border-bottom-right-radius: 0.1vmin;
       border-bottom-left-radius: 0.1vmin;
-      left: -0.05vmin;
     }
   }
 }
