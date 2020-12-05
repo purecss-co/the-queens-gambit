@@ -1,6 +1,8 @@
 // colors
-$bg-color: #fff;
-$logo-color: #000;
+$bg-dark-color: #000;
+$bg-light-color: #fff;
+$bg-shadow-top: #2e2a53;
+$bg-shadow-bottom: #000;
 $shirt-color: #000023;
 $hair-color: #cf3d07;
 $hair-dark-color: #6e2304;
@@ -33,7 +35,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: $bg-color;
   overflow: hidden;
 
   * {
@@ -59,10 +60,10 @@ body {
     height: 100%;
     background: repeating-linear-gradient(
       0deg,
-      #000 0,
-      #000 12vmin,
-      #fff 12vmin,
-      #fff 24vmin
+      $bg-dark-color 0,
+      $bg-dark-color 12vmin,
+      $bg-light-color 12vmin,
+      $bg-light-color 24vmin
     );
   }
 
@@ -71,10 +72,10 @@ body {
     height: 100%;
     background: repeating-linear-gradient(
       90deg,
-      #000 0,
-      #000 12vmin,
-      #fff 12vmin,
-      #fff 24vmin
+      $bg-dark-color 0,
+      $bg-dark-color 12vmin,
+      $bg-light-color 12vmin,
+      $bg-light-color 24vmin
     );
     mix-blend-mode: difference;
   }
@@ -87,8 +88,8 @@ body {
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(#2e2a53, 0.6) 35%,
-    rgba(black, 1) 70%
+    rgba($bg-shadow-top, 0.6) 35%,
+    rgba($bg-shadow-bottom, 1) 70%
   );
   mix-blend-mode: hard-light;
 }
