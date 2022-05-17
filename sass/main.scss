@@ -99,7 +99,6 @@ body {
   height: 90vmin;
   z-index: 2;
   overflow: hidden;
-  //   border: 0.5vmin solid blue;
 
   .hair {
     &-1 {
@@ -409,7 +408,7 @@ body {
       width: 27vmin;
       top: -33.8vmin;
       border-radius: 30% 70% 50% 50% / 0% 0% 100% 100%;
-      background: linear-gradient(to right, $face-color, $face-light-color);
+      background: linear-gradient(to right, $face-color, $face-light-color 36%);
       box-shadow: 0 0 1vmin 0.01vmin rgba($face-shadow-color, 0.3);
     }
   }
@@ -818,6 +817,162 @@ body {
       top: -15.5vmin;
       left: 0.5vmin;
       border-radius: 0% 100% 100% 0% / 100% 50% 50% 0%;
+    }
+  }
+
+  .mouth {
+    &-1 {
+      width: 5vmin;
+      height: 2.1vmin;
+      background: $mouth-color;
+      top: -10.8vmin;
+      left: 0.1vmin;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+
+      &::before {
+        width: 2vmin;
+        height: 1.5vmin;
+        background: $mouth-color;
+        top: -0.5vmin;
+        left: 4vmin;
+        transform: rotate(-42deg);
+      }
+
+      &::after {
+        width: 2vmin;
+        height: 1.5vmin;
+        background: $mouth-color;
+        top: -0.5vmin;
+        left: -1vmin;
+        transform: rotate(42deg);
+      }
+    }
+
+    &-2 {
+      width: 3.8vmin;
+      height: 1.5vmin;
+      background: $mouth-dark-color;
+      top: -13.75vmin;
+      left: -3.5vmin;
+      transform: rotate(5deg);
+
+      &::before {
+        width: 3.8vmin;
+        height: 1.5vmin;
+        background: $mouth-dark-color;
+        top: -0.3vmin;
+        left: 3.6vmin;
+        transform: rotate(-10deg);
+      }
+    }
+
+    &-3 {
+      width: 4vmin;
+      height: 2vmin;
+      background: $face-light-color;
+      top: -14.65vmin;
+      left: -4vmin;
+      border-bottom-right-radius: 100%;
+      transform: rotate(-2deg);
+
+      &::before {
+        width: 4vmin;
+        height: 2vmin;
+        background: $face-light-color;
+        top: 0.2vmin;
+        left: 4.2vmin;
+        transform: rotate(4deg);
+        border-bottom-left-radius: 100%;
+      }
+
+      &::after {
+        width: 1.45vmin;
+        height: 1.35vmin;
+        background: $face-light-color;
+        top: 0.4vmin;
+        left: 3.3vmin;
+        transform: rotate(46deg);
+      }
+    }
+
+    &-4 {
+      width: 4vmin;
+      height: 0.5vmin;
+      background: $face-light-color;
+      top: -14.7vmin;
+
+      &::before {
+        width: 1vmin;
+        height: 0.3vmin;
+        background: $mouth-dark-color;
+        top: 1.1vmin;
+        left: 1.6vmin;
+      }
+    }
+
+    &-5 {
+      width: 3.1vmin;
+      height: 0.5vmin;
+      background: $mouth-light-color;
+      top: -10.9vmin;
+      border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+
+      &::before {
+        width: 1.1vmin;
+        height: 0.2vmin;
+        background: $mouth-darken-color;
+        top: -0.45vmin;
+        left: 0.35vmin;
+        transform: rotate(5deg);
+        border-radius: 50%;
+      }
+
+      &::after {
+        width: 1.1vmin;
+        height: 0.2vmin;
+        background: $mouth-darken-color;
+        top: -0.45vmin;
+        left: 1.75vmin;
+        transform: rotate(-8deg);
+        border-radius: 50%;
+      }
+    }
+
+    &-6 {
+      width: 0.5vmin;
+      height: 0.1vmin;
+      background: $mouth-line-color;
+      top: -12.6vmin;
+      left: -7.7vmin;
+      transform: rotate(5deg);
+
+      &::before {
+        width: 0.5vmin;
+        height: 0.1vmin;
+        background: $mouth-line-color;
+        top: -0.7vmin;
+        left: 7.7vmin;
+        transform: rotate(-20deg);
+      }
+    }
+
+    &-7 {
+      width: 3.1vmin;
+      height: 0.5vmin;
+      background: transparent;
+      top: -7.75vmin;
+      left: 0.3vmin;
+      border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+      border: 0.1vmin solid $mouth-line-color;
+
+      &::before {
+        width: 3.5vmin;
+        height: 1vmin;
+        background: $face-light-color;
+        top: 0.3vmin;
+        left: -0.3vmin;
+      }
     }
   }
 
