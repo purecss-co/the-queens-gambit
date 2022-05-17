@@ -394,14 +394,12 @@ body {
   }
 
   .face {
-    &-1 {
-      height: 31vmin;
-      width: 27vmin;
-      background: linear-gradient(to right, $face-color, $face-light-color 36%);
-      top: -33.8vmin;
-      border-radius: 30% 70% 50% 50% / 0% 0% 100% 100%;
-      box-shadow: 0 0 1vmin 0.01vmin rgba($face-shadow-color, 0.3);
-    }
+    height: 31vmin;
+    width: 27vmin;
+    background: linear-gradient(to right, $face-color, $face-light-color 36%);
+    top: -33.8vmin;
+    border-radius: 30% 70% 50% 50% / 0% 0% 100% 100%;
+    box-shadow: 0 0 1vmin 0.01vmin rgba($face-shadow-color, 0.3);
   }
 
   .eyebrow {
